@@ -1,5 +1,5 @@
 function init(location) {
-    $.getJSON('http://api.open-notify.org/iss-pass.json?callback=?', {lat: location.coords.latitude, lon: location.coords.longitude, n: 1}, function(data) {
+    $.getJSON('http://api.open-notify.org/iss-pass.json?callback=?', {lat: location.coords.latitude, lon: location.coords.longitude}, function(data) {
         var eventTime = moment.unix(data.response[0].risetime);
         var currentTime = moment()
         var diffTime = eventTime - currentTime;
