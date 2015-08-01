@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    display: table;
+    display: none;
     font-family: "Quicksand";
     font-weight: 400;
     text-align: center;
@@ -21,12 +21,66 @@ body {
     display: table-cell;
     vertical-align: middle;
 
+    img {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        height: 150px;
+    }
+
     h1 {
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 400;
 
         b {
-            font-size: 36px;
+            font-size: 38px;
+        }
+    }
+
+    #timer {
+        margin: 35px 0;
+        font-size: 38px;
+        font-weight: 700;
+
+        span {
+            font-weight: 400;
+            margin: 0 20px;
+        }
+    }
+
+    #bulb {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 120px;
+        margin-right: 45px;
+        color: #F7CA18;
+    }
+
+    #lights {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 32px;
+
+        b {
+            font-size: 42px;
+            color: #F7CA18;
+        }
+    }
+
+    #buttons {
+        margin-top: 45px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 20px;
+            border-radius: 2px;
+            font-size: 16px;
+            font-weight: 700;
+
+            &:hover {
+                color: #F7CA18;
+            }
         }
     }
 }
