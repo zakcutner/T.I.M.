@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: table;
+    font-family: "Quicksand";
+    font-weight: 400;
+    text-align: center;
+}
+
+#content {
+    display: table-cell;
+    vertical-align: middle;
+
+    h1 {
+        font-size: 30px;
+        font-weight: 400;
+
+        b {
+            font-size: 36px;
+        }
+    }
+}
+
